@@ -2,8 +2,9 @@ import React from "react";
 
 const Spinner = () => {
   return (
-    <div className="simple-spinner">
-      <span></span>
+    <div className="spinner">
+      <div className="simple-spinner"></div>
+      <span>Generation your creativity</span>
     </div>
   );
 };

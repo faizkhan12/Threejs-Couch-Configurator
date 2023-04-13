@@ -28,14 +28,15 @@ const Home = () => {
           <motion.div className="home-content" {...headContainerAnimation}>
             <motion.div {...headTextAnimation}>
               <h1 className="head-text">
-                CUSTOMIZE <br className="xl:block hidden" />
-                YOUR COUCH
+                GET <br className="xl:block hidden" />
+                YOUR OWN <br />
+                COUCH
               </h1>
             </motion.div>
             <motion.div {...headTextAnimation} className="flex flex-col gap-5">
               <p className="max-w-md font-normal text-gray-600 text-base">
-                So why wait? Start creating your perfect custom coucht today
-                with our <strong>3D couch customizer</strong>. With endless
+                So why wait? Start creating your perfect custom couch today with
+                our <strong>3D couch customizer</strong>. With endless
                 possibilities and unparalleled convenience, you'll wonder how
                 you ever lived without it!
               </p>

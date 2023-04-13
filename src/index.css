@@ -21,25 +21,32 @@ button:hover {
   color: white;
   background-position: 0 100%;
 }
-
-.simple-spinner {
-  width: 30px;
+.spinner {
+  width: 50%;
   height: 30px;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
   z-index: 1000;
 }
 
-.simple-spinner span {
+.simple-spinner {
+  transform: translate(-50%, -50%);
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   border: 3px solid transparent;
   border-radius: 50%;
   border-right-color: rgba(255, 255, 255, 0.7);
   animation: spinner-anim 0.8s linear infinite;
+}
+
+.spinner span {
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: -100px;
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s infinite;
 }
 
 @keyframes spinner-anim {
@@ -48,6 +55,29 @@ button:hover {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes blink-animation {
+  0% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink-animation {
+  0% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
 }
 
@@ -62,7 +92,7 @@ button:hover {
 }
 
 .home {
-  @apply w-fit xl:h-full flex xl:justify-between justify-start items-start flex-col xl:py-8 xl:px-36 sm:p-8 p-6 max-xl:gap-7 absolute z-10;
+  @apply w-fit xl:h-full flex xl:justify-between justify-start items-start flex-col xl:py-8 xl:px-20 sm:p-8 p-6 max-xl:gap-7 absolute z-10;
 }
 
 .home-content {
@@ -70,7 +100,7 @@ button:hover {
 }
 
 .head-text {
-  @apply xl:text-[7rem] text-[2rem] xl:leading-[8rem] leading-[3rem] font-black text-black;
+  @apply xl:text-[6rem] text-[2rem] xl:leading-[8rem] leading-[3rem] font-black text-black;
 }
 
 .download-btn {
