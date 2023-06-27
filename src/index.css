@@ -7,6 +7,7 @@
 
 html {
   font-family: "Inter", sans-serif;
+  background-color: #000;
 }
 
 button {
@@ -100,7 +101,7 @@ button:hover {
 }
 
 .head-text {
-  @apply xl:text-[6rem] text-[2rem] xl:leading-[8rem] leading-[3rem] font-black text-black;
+  @apply xl:text-[6rem] text-[2rem] xl:leading-[8rem] leading-[3rem] font-black text-white;
 }
 
 .download-btn {

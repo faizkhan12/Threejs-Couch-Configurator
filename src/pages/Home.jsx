@@ -34,7 +34,7 @@ const Home = () => {
               </h1>
             </motion.div>
             <motion.div {...headTextAnimation} className="flex flex-col gap-5">
-              <p className="max-w-md font-normal text-gray-600 text-base">
+              <p className="max-w-md font-normal text-gray-500 text-base">
                 So why wait? Start creating your perfect custom couch today with
                 our <strong>3D couch customizer</strong>. With endless
                 possibilities and unparalleled convenience, you'll wonder how
