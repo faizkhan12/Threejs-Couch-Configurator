@@ -101,7 +101,7 @@ button:hover {
 }
 
 .head-text {
-  @apply xl:text-[6rem] text-[2rem] xl:leading-[8rem] leading-[3rem] font-black text-white;
+  @apply xl:text-[6rem] text-[2rem] xl:leading-[8rem] leading-[3rem] font-black;
 }
 
 .download-btn {
