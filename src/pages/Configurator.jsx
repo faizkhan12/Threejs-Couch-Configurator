@@ -67,7 +67,7 @@ const Configurator = () => {
       );
 
       const data = await response.json();
-      handleDecals(type, `data:image/png;base64,${data.photo}`);
+      handleDecals(type, `data:image/png;base64,${data.photo[0].b64_json}`);
     } catch (error) {
       alert(error);
     } finally {

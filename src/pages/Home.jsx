@@ -27,7 +27,7 @@ const Home = () => {
           </motion.header>
           <motion.div className="home-content" {...headContainerAnimation}>
             <motion.div {...headTextAnimation}>
-              <h1 style={{ color: "#fff" }} className="head-text">
+              <h1 className="head-text">
                 GET <br className="xl:block hidden" />
                 YOUR OWN <br />
                 COUCH
